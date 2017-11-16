@@ -1,0 +1,53 @@
+body, ::placeholder, p, button, input {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+::placeholder {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	font-size: 46px;
+	text-align: center;
+	color: #00a79d;
+	margin: 10px 0 0 0;
+}
+
+.new-idea {
+	background-color: #e5f3f2;
+	padding: 20px 10px;
+}
+
+.header-span {
+	color: #6d6e79;
+}
+
+.title-input, .body-input, .save-new-idea-button {
+	display: block;
+	width: 480px;
+	height: 30px;
+	margin: 20px auto;
+}
+
+.save-new-idea-button {
+	font-weight: 700;
+	border: none;
+	background-color: #00a79d;
+	height: 40px;
+	color: #fff;
+}
+
+.save-new-idea-button:hover {
+	background-color: #045e55;
+}
+
+@media screen and (max-width: 499px) {
+	.title-input, .body-input, .save-new-idea-button {
+		width: 100%;
+	}
+
+}
