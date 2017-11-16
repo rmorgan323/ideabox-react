@@ -5,7 +5,7 @@ body, ::placeholder, p, button, input {
 }
 
 ::placeholder {
-	text-align: center;
+	text-align: left;
 }
 
 h1 {
@@ -17,16 +17,43 @@ h1 {
 	margin: 10px 0 0 0;
 }
 
-.new-idea {
+h2 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	font-size: 32px;
+	color: #6d6e79;
+	margin: 0;
+}
+
+h5 {
+	margin: 13px 0;
+}
+
+p {
+	margin: 7px 0;
+}
+
+.new-idea-component {
 	background-color: #e5f3f2;
-	padding: 20px 10px;
+	padding: 20px 20px 2px;
+}
+
+.search-component {
+	padding: 0 20px;
+}
+
+.idea-card-component {
+	padding: 0 20px;
+	display: block;
+	width: 480px;
+	margin: auto;
 }
 
 .header-span {
 	color: #6d6e79;
 }
 
-.title-input, .body-input, .save-new-idea-button {
+.title-input, .body-input, .save-new-idea-button, .search-box {
 	display: block;
 	width: 480px;
 	height: 30px;
@@ -39,15 +66,71 @@ h1 {
 	background-color: #00a79d;
 	height: 40px;
 	color: #fff;
+	cursor: pointer;
 }
 
 .save-new-idea-button:hover {
 	background-color: #045e55;
 }
 
+.idea-card-heading {
+	display: flex;
+	align-items: center;
+}
+
+.delete-card-button, .upvote-button, .downvote-button {
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+}
+
+.delete-card-button {
+	background-image: url('/lib/assets/delete.svg');
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.delete-card-button:hover {
+	background-image: url('/lib/assets/delete-hover.svg');
+}
+
+.quality-component {
+	display: flex;
+	align-items: center;
+}
+
+.upvote-button {
+	background-image: url('/lib/assets/upvote.svg');
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.downvote-button {
+	background-image: url('/lib/assets/downvote.svg');
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.upvote-button:hover {
+	background-image: url('/lib/assets/upvote-hover.svg');
+}
+
+.downvote-button:hover {
+	background-image: url('/lib/assets/downvote-hover.svg');
+}
+
+.idea-card-hr {
+	border: 1px solid grey;
+	opacity: .2;
+}
+
 @media screen and (max-width: 499px) {
-	.title-input, .body-input, .save-new-idea-button {
-		width: 100%;
+	.title-input, .body-input, .save-new-idea-button, .search-box {
+		width: 98%;
+	}
+
+	.idea-card-component {
+		width: initial;
 	}
 
 }
