@@ -1,7 +1,7 @@
 {
-  "name": "react-starter-kit",
+  "name": "IdeaBox-React",
   "version": "1.0.0",
-  "description": "A good enough starter kit for a React project, I guess.",
+  "description": "React version of IdeaBox - Pre Mod3",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
