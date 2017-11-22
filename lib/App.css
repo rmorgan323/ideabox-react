@@ -6,6 +6,7 @@ body, ::placeholder, p, button, input {
 
 ::placeholder {
 	text-align: left;
+	opacity: .3;
 }
 
 h1 {
@@ -27,6 +28,7 @@ h2 {
 
 h5 {
 	margin: 13px 0;
+	color: #6d6e79;
 }
 
 p {
@@ -76,6 +78,7 @@ p {
 .idea-card-heading {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .delete-card-button, .upvote-button, .downvote-button {
@@ -88,6 +91,7 @@ p {
 	background-image: url('/lib/assets/delete.svg');
 	margin-left: auto;
 	cursor: pointer;
+	display: flex;
 }
 
 .delete-card-button:hover {
@@ -120,11 +124,12 @@ p {
 }
 
 .idea-card-hr {
-	border: 1px solid grey;
-	opacity: .2;
+	border: .5px solid #6d6e79;
+	opacity: .3;
+	margin-bottom: 18px;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 520px) {
 	.title-input, .body-input, .save-new-idea-button, .search-box {
 		width: 98%;
 	}
