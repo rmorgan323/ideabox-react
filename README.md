@@ -1,31 +1,7 @@
-# React Starter Kit
+This is a remake of an earlier vanilla JS project built for Turing School of Software & Design.  This version was built over a school break using React, with the intention of improving skills with React.
 
-To install the dependencies:
+It's a simple app that allows a user to create and save ideas.  Ideas can be filtered using search and rated by quality.  They persist using local storage.
 
-```
-npm install
-```
+********
 
-To fire up a development server:
-
-```
-npm start
-```
-
-Once the server is running, you can visit:
-
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
-
-To build the static files:
-
-```js
-npm run build
-```
-
-
-To run tests in Node:
-
-```js
-npm test
-```
+![Screenshot](ideabox-react-ss.png)
